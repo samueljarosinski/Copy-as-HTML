@@ -17,4 +17,30 @@
     <depends>com.intellij.modules.platform</depends>
     <idea-version since-build="183" />
 
+    <actions>
+
+        <action
+            id="io.github.samueljarosinski.copyashtml.CopyAsHtml.CutCopyPasteGroupAction"
+            class="io.github.samueljarosinski.copyashtml.CopyAsHtmlAction"
+            text="Copy as _HTML"
+            description="Copies selection, including syntax highlighting, as HTML text">
+
+            <add-to-group group-id="CutCopyPasteGroup" anchor="after" relative-to-action="$Copy"/>
+            <keyboard-shortcut first-keystroke="control shift h" keymap="$default"/>
+
+        </action>
+
+        <action
+            id="io.github.samueljarosinski.copyashtml.CopyAsHtml.EditorPopupMenuAction"
+            class="io.github.samueljarosinski.copyashtml.CopyAsHtmlAction"
+            text="Copy as _HTML"
+            description="Copies selection, including syntax highlighting, as HTML text">
+
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="CopyAsRichText"/>
+            <keyboard-shortcut first-keystroke="control shift h" keymap="$default"/>
+
+        </action>
+
+    </actions>
+
 </idea-plugin>
