@@ -1,0 +1,20 @@
+<!--suppress PluginXmlValidity -->
+<idea-plugin url="https://github.com/samueljarosinski/Copy-as-HTML">
+
+    <id>io.github.samueljarosinski.Copy as HTML</id>
+    <name>Copy as HTML</name>
+
+    <vendor email="samueljarosinski@gmail.com" url="https://github.com/samueljarosinski">Samuel Jarosiński</vendor>
+
+    <description>
+        <![CDATA[
+            Copies selection, including syntax highlighting, as HTML text.
+        ]]>
+    </description>
+
+    <change-notes>Initial release.</change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="183" />
+
+</idea-plugin>
